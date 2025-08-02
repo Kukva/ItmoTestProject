@@ -1,24 +1,30 @@
 {
-  "parsed_at": "2025-08-02T17:33:46.094404",
+  "parsed_at": "2025-08-02T19:25:49.400088",
   "programs_count": 2,
   "programs": {
     "ai": {
       "program_id": "ai",
       "url": "https://abit.itmo.ru/program/master/ai",
       "has_web_data": true,
-      "has_curriculum": false,
+      "has_curriculum": true,
       "title": "Искусственный интеллект",
       "directions_count": 3,
-      "pdf_links_count": 3
+      "pdf_links_count": 3,
+      "total_credits": 132,
+      "total_courses": 284,
+      "blocks_count": 5
     },
     "ai_product": {
       "program_id": "ai_product",
       "url": "https://abit.itmo.ru/program/master/ai_product",
       "has_web_data": true,
-      "has_curriculum": false,
+      "has_curriculum": true,
       "title": "Управление ИИ-продуктами/AI Product",
       "directions_count": 1,
-      "pdf_links_count": 3
+      "pdf_links_count": 3,
+      "total_credits": 132,
+      "total_courses": 184,
+      "blocks_count": 5
     }
   }
 }

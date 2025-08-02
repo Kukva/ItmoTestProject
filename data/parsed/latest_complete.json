@@ -2,7 +2,7 @@
   "ai": {
     "program_id": "ai",
     "url": "https://abit.itmo.ru/program/master/ai",
-    "parsed_at": "2025-08-02T17:33:41.447693",
+    "parsed_at": "2025-08-02T19:25:44.361695",
     "web_data": {
       "program_title": "Искусственный интеллект",
       "directions": [
@@ -72,12 +72,1890 @@
         }
       ]
     },
-    "curriculum_data": null
+    "curriculum_data": {
+      "program_name": "ОП Искусственный интеллект",
+      "blocks": [
+        {
+          "name": "Блок 1. Модули (дисциплины)",
+          "block_number": 1,
+          "total_credits": 60,
+          "total_hours": 2160,
+          "sub_blocks": [
+            {
+              "name": "Обязательные дисциплины. 1 семестр",
+              "semester": 1,
+              "total_credits": 3,
+              "total_hours": 108,
+              "courses": [
+                {
+                  "name": "Воркшоп по созданию продукта на данных / Data Product Development Workshop",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 1 семестр",
+              "semester": 1,
+              "total_credits": 15,
+              "total_hours": 540,
+              "courses": [
+                {
+                  "name": "Практика применения машинного обучения",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Алгоритмы и структуры данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Математическая статистика",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Разработка веб-приложений (Python Backend)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Программирование на С++",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Введение в МО (Python) и Продвинутое МО (Python)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Технологии обработки естественного языка",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Автоматическое машинное обучение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Обработка и генерация изображений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Проектирование и разработка рекомендательных систем (продвинутый уровень)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы глубокого обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Продвинутое МО (Python) и Глубокое обучение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Введение в большие языковые модели (LLM)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Проектирование систем машинного обучения (ML System Design)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Проектирование микросервисов",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Хранение больших данных и Введение в МО (Python)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Вычисления на графических процессорах (GPU)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Инструменты разработки data-driven решений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Контейнеризация и оркестрация приложений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Продуктовые исследования",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Графические интерфейсы",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Создание интеллектуальных агентов",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Прикладной анализ временных рядов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Процессы и методологии разработки решений на основе ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Инжиниринг управления данными",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Бизнес-аналитика для инженеров",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Математика для машинного обучения и анализа данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Языки программирования",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Инженерные практики в ML и анализе данных",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Дополнительные разделы машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Базы данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 2 семестр",
+              "semester": 2,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Глубокое обучение на практике",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Воркшоп по прикладному использованию языковых и генеративных моделей",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Глубокие генеративные модели (Deep Generative Models)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Дополнительные разделы математики и алгоритмов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Программирование на Python (продвинутый уровень)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Технологии и практики MLOps",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Продвинутое МО (Python) и Автоматическая обработка текстов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Продвинутое МО (Python) и Обработка изображений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Прикладная математика и статистика / Applied Math and Statistics",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Автоматическая обработка текстов и Социальные сети",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Специальные главы геномики",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Специальные главы биоинформатики",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Нейросети в химии / Neural Networks in Chemistry",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Обучение с подкреплением",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Интеллектуальные агенты и большие языковые модели",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Разработка приложений разговорного искусственного интеллекта",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Распознавание и генерация речи",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Технологии обработки естественного языка",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Компьютерное зрение (продвинутый уровень)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Технологии компьютерного зрения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Обработка изображений и Компьютерное зрение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Автоматическая обработка текстов и Обработка изображений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "А/В тестирование",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Информационный поиск",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление данными",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Сбор и разметка данных для машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Проектирование систем машинного обучения (ML System Design)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Безопасность ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление проектами в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Продуктовый дизайн и прототипирование AI-решений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Бизнес-анализ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Практики менторства и развития в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Основы построения рекомендательных систем",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Инженерия данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Системы обработки и анализа больших массивов данных",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление технологическим продуктом",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Языки программирования для работы с данными",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Машинное обучение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Задачи машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Обработка естественного языка",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 3 семестр",
+              "semester": 3,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Алгоритмы и структуры данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Математическая статистика",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Прикладной анализ временных рядов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Разработка веб-приложений (Python Backend)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Программирование на С++",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Введение в МО (Python) и Продвинутое МО (Python)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Технологии обработки естественного языка",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Автоматическое машинное обучение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Обработка и генерация изображений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Проектирование и разработка рекомендательных систем (продвинутый уровень)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Глубокое обучение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Продвинутое МО (Python) и Глубокое обучение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Введение в большие языковые модели (LLM)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Мультимодальные генеративные модели искусственного интеллекта",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Проектирование систем машинного обучения (ML System Design)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Проектирование микросервисов",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Хранение больших данных и Введение в МО (Python)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Базы данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Вычисления на графических процессорах (GPU)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Инструменты разработки data-driven решений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Контейнеризация и оркестрация приложений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Продуктовые исследования",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Графические интерфейсы",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Воркшоп по применению ИИ",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Мастерская по проектам для работы с данными",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Инжиниринг управления данными",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Прикладная математика для машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Языки программирования. Продвинутый уровень",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Продвинутое машинное обучение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Прикладные задачи машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Бизнес-аналитика",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Прикладные инструменты разработки",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Процессы и методологии разработки решений на основе ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 4 семестр",
+              "semester": 4,
+              "total_credits": 6,
+              "total_hours": 216,
+              "courses": [
+                {
+                  "name": "Воркшоп по прикладному использованию языковых и генеративных моделей",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Глубокие генеративные модели (Deep Generative Models)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Дополнительные разделы математики и алгоритмов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Программирование на Python (продвинутый уровень)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Технологии и практики MLOps",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Продвинутое МО (Python) и Автоматическая обработка текстов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Продвинутое МО (Python) и Обработка изображений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Прикладная математика и статистика / Applied Math and Statistics",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Автоматическая обработка текстов и Социальные сети",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Специальные главы геномики",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Специальные главы биоинформатики",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Нейросети в химии / Neural Networks in Chemistry",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Обучение с подкреплением",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Интеллектуальные агенты и большие языковые модели",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Разработка приложений разговорного искусственного интеллекта",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Распознавание и генерация речи",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Технологии обработки естественного языка",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Компьютерное зрение (продвинутый уровень)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Технологии компьютерного зрения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Обработка изображений и Компьютерное зрение",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Автоматическая обработка текстов и Обработка изображений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "А/В тестирование",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Основы построения рекомендательных систем",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Управление данными",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Инженерия данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Сбор и разметка данных для машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Системы обработки и анализа больших массивов данных",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Проектирование систем машинного обучения (ML System Design)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Безопасность ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Управление проектами в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Продуктовый дизайн и прототипирование AI-решений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Практики менторства и развития в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Бизнес-анализ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Информационный поиск",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Воркшоп по ML",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Языки программирования для работы с данными. Продвинутый уровень",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Продвинутое машинное обучение - дополнительные главы",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Применение машинного обучения в доменных областях",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Глубокое обучение и обработка естественного языка",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Управление технологическим продуктом",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Блок 2. Практика",
+          "block_number": 2,
+          "total_credits": 54,
+          "total_hours": 1944,
+          "sub_blocks": [
+            {
+              "name": "Проектная практика",
+              "semester": 1,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Проектная практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 1
+                }
+              ]
+            },
+            {
+              "name": "Производственная, преддипломная практика",
+              "semester": 4,
+              "total_credits": 6,
+              "total_hours": 216,
+              "courses": [
+                {
+                  "name": "Производственная, преддипломная практика",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                }
+              ]
+            },
+            {
+              "name": "Проектная практика",
+              "semester": 2,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Проектная практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 2
+                }
+              ]
+            },
+            {
+              "name": "Научно-исследовательская практика",
+              "semester": 2,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Научно-исследовательская практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 2
+                }
+              ]
+            },
+            {
+              "name": "Производственная проектно-технологическая практика",
+              "semester": 3,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Производственная проектно-технологическая практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 3
+                }
+              ]
+            },
+            {
+              "name": "Производственная, научно-исследовательская практика",
+              "semester": 3,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Производственная, научно-исследовательская практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 3
+                }
+              ]
+            },
+            {
+              "name": "Проектная работа",
+              "semester": 4,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Проектная работа",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 4
+                }
+              ]
+            },
+            {
+              "name": "Научно-исследовательская работа",
+              "semester": 4,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Научно-исследовательская работа",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Блок 3. ГИА",
+          "block_number": 3,
+          "total_credits": 6,
+          "total_hours": 216,
+          "sub_blocks": [
+            {
+              "name": "Дисциплины",
+              "semester": null,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Государственная итоговая аттестация",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": null
+                },
+                {
+                  "name": "Подготовка к защите и защита ВКР",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Блок 4. Факультативные модули (дисциплины)",
+          "block_number": 4,
+          "total_credits": 0,
+          "total_hours": 0,
+          "sub_blocks": [
+            {
+              "name": "Дисциплины",
+              "semester": null,
+              "total_credits": 95,
+              "total_hours": 3420,
+              "courses": [
+                {
+                  "name": "Иностранный язык в профессиональной деятельности (аспирантский трек)",
+                  "credits": 4,
+                  "hours": 144,
+                  "semester": null
+                },
+                {
+                  "name": "Иностранный язык в профессиональной деятельности / Foreign Language for Professional activity",
+                  "credits": 4,
+                  "hours": 144,
+                  "semester": 3
+                },
+                {
+                  "name": "Регуляция эмоционального состояния в профессиональной деятельности",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление мотивацией",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление мотивацией",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление мотивацией",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Инструменты принятия решений / Art & math of decision making",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Инструменты принятия решений / Art & math of decision making",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Инструменты принятия решений / Art & math of decision making",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Медиация и урегулирование разногласий / Mediation and dispute resolutio",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Медиация и урегулирование разногласий / Mediation and dispute resolutio",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Медиация и урегулирование разногласий / Mediation and dispute resolutio",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Развитие карьеры в современной профессиональной среде",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Развитие карьеры в современной профессиональной среде",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Развитие карьеры в современной профессиональной среде",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Выступления для молодых ученых",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Выступления для молодых ученых",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Выступления для молодых ученых",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Самопрезентация и питчинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Самопрезентация и питчинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Самопрезентация и питчинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Современное лидерство",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Современное лидерство",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Современное лидерство",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Межкультурная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Межкультурная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Межкультурная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Работа в удаленных командах",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Работа в удаленных командах",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Работа в удаленных командах",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Публичные выступления в онлайн-формате",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Публичные выступления в онлайн-формате",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Публичные выступления в онлайн-формате",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Техники ответов на вопросы в публичных выступлениях",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Техники ответов на вопросы в публичных выступлениях",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Техники ответов на вопросы в публичных выступлениях",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Публичные выступления в профессиональной деятельности / Pitches and speeches",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Публичные выступления в профессиональной деятельности / Pitches and speeches",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Публичные выступления в профессиональной деятельности / Pitches and speeches",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Доказательный подход к управлению карьерой / Evidence-based approach to career management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Доказательный подход к управлению карьерой / Evidence-based approach to career management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Доказательный подход к управлению карьерой / Evidence-based approach to career management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Планирование и изменение карьерной траектории / Launching and relaunching your career",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Планирование и изменение карьерной траектории / Launching and relaunching your career",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Планирование и изменение карьерной траектории / Launching and relaunching your career",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Основы публичных выступлений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы публичных выступлений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Основы публичных выступлений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Сторителлинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Сторителлинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Сторителлинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Стратегии эффективных переговоров с работодателем",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Стратегии эффективных переговоров с работодателем",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Стратегии эффективных переговоров с работодателем",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Управление стрессом / Stress management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление стрессом / Stress management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление стрессом / Stress management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Практики совместной работы и принятия решений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Практики совместной работы и принятия решений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Практики совместной работы и принятия решений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Сложная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Сложная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Сложная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Основы финансовой грамотности",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы финансовой грамотности",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Основы финансовой грамотности",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Целеполагание в современном мире",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Целеполагание в современном мире",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Целеполагание в современном мире",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Управление стрессом и профилактика выгорания",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление стрессом и профилактика выгорания",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление стрессом и профилактика выгорания",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Тайм-менеджмент",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Тайм-менеджмент",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Тайм-менеджмент",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Управление конфликтами",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление конфликтами",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление конфликтами",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Современная бизнес-коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Современная бизнес-коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Современная бизнес-коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Карьера в IT",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Карьера в IT",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Карьера в IT",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Эмпатичная коммуникация / Empathetic communication",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Эмпатичная коммуникация / Empathetic communication",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Эмпатичная коммуникация / Empathetic communication",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Универсальная (надпрофессиональная) подготовка",
+          "block_number": null,
+          "total_credits": 12,
+          "total_hours": 432,
+          "sub_blocks": [
+            {
+              "name": "Универсальные дисциплины",
+              "semester": null,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Магистратура/Аспирантура ИИ",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": null
+                },
+                {
+                  "name": "Мировоззренческий модуль + иняз",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": null
+                },
+                {
+                  "name": "Иностранный язык",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": null
+                },
+                {
+                  "name": "Иностранный язык 2 сем",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Английский язык в профессиональной деятельности / English for specific purposes",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Русский язык как иностранный / Russian as a foreign language",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Английский язык A2 / English A2",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Английский язык A1 / English A1",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Иностранный язык 1 сем",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Русский язык как иностранный / Russian as a foreign language",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Английский язык в профессиональной деятельности / English for specific purposes",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Английский язык A2 / English A2",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Английский язык A1 / English A1",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Мировоззренческий модуль",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Предпринимательская культура",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Стартап-трек: от mvp до бизнеса",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Создание и развитие технологического бизнеса",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Креативные технологии",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Основы концептуального мышления / Introduction to Conceptual Thinking",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы концептуального мышления",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Критическое мышление (продвинутый уровень)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Навыки критического мышления (продвинутый уровень) / Critical Thinking Skills (advanced)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Этика в сфере информационных технологий и искусственного интеллекта",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Аспирантский трек",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": null
+                },
+                {
+                  "name": "История и философия науки",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "История и философия науки",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Иностранный язык",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": null
+                },
+                {
+                  "name": "Иностранный язык / Foreign Language",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Иностранный язык / Foreign Language",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Элективные микромодули Soft Skills",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Элективные микромодули Soft Skills",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Элективные микромодули Soft Skills",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Обязательная проектная практика",
+                  "credits": 18,
+                  "hours": 648,
+                  "semester": null
+                },
+                {
+                  "name": "Проектная практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 1
+                },
+                {
+                  "name": "Производственная, преддипломная практика",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Проектная практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 2
+                },
+                {
+                  "name": "Научно-исследовательская практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 2
+                },
+                {
+                  "name": "Производственная проектно-технологическая практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 3
+                },
+                {
+                  "name": "Производственная, научно-исследовательская практика",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 3
+                },
+                {
+                  "name": "Проектная работа",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 4
+                },
+                {
+                  "name": "Научно-исследовательская работа",
+                  "credits": 12,
+                  "hours": 432,
+                  "semester": 4
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "total_credits": 132,
+      "total_courses": 284
+    }
   },
   "ai_product": {
     "program_id": "ai_product",
     "url": "https://abit.itmo.ru/program/master/ai_product",
-    "parsed_at": "2025-08-02T17:33:43.729953",
+    "parsed_at": "2025-08-02T19:25:46.919426",
     "web_data": {
       "program_title": "Управление ИИ-продуктами/AI Product",
       "directions": [
@@ -133,6 +2011,1260 @@
         }
       ]
     },
-    "curriculum_data": null
+    "curriculum_data": {
+      "program_name": "Учебная программа",
+      "blocks": [
+        {
+          "name": "Блок 1. Модули (дисциплины)",
+          "block_number": 1,
+          "total_credits": 72,
+          "total_hours": 2592,
+          "sub_blocks": [
+            {
+              "name": "Обязательные дисциплины. 1 семестр",
+              "semester": 1,
+              "total_credits": 6,
+              "total_hours": 216,
+              "courses": [
+                {
+                  "name": "Продуктовые исследования",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Воркшоп по созданию продукта на данных / Data Product Development Workshop",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 1 семестр",
+              "semester": 1,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Процессы и методологии разработки решений на основе ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Монетизация ИИ-продуктов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Стратегический продуктовый менеджмент",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Продуктовый дизайн и прототипирование AI-решений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Математика для машинного обучения и анализа данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Математическая статистика",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы программирования на Python",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы глубокого обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Введение в большие языковые модели (LLM)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Прикладной анализ временных рядов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Инженерные практики в ML и анализе данных",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Прикладные инструменты разработки",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Разработка веб-приложений (Python Backend)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                },
+                {
+                  "name": "Проектирование микросервисов",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 1
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 2 семестр",
+              "semester": 2,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Бизнес-анализ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Практики менторства и развития в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление проектами в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Метрики и аналитика продукта",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление продуктовым портфелем",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Основы маркетинга для ИИ-продуктов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление командами и проектами в ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Фандрайзинг и бизнес-планирование",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Инженерия данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Программирование на Python (продвинутый уровень)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Прикладные задачи машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Данные в финансовом секторе",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Финансовые технологии",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Глубокое обучение на практике",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Проектирование систем машинного обучения (ML System Design)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Обработка естественного языка",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Интеллектуальные агенты и большие языковые модели",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Воркшоп по прикладному использованию языковых и генеративных моделей",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Основы построения рекомендательных систем",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                },
+                {
+                  "name": "Технологии компьютерного зрения",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 2
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 3 семестр",
+              "semester": 3,
+              "total_credits": 15,
+              "total_hours": 540,
+              "courses": [
+                {
+                  "name": "Процессы и методологии разработки решений на основе ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Продуктовый дизайн и прототипирование AI-решений",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Стратегический продуктовый менеджмент",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Монетизация ИИ-продуктов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Математика для машинного обучения и анализа данных",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Математическая статистика",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Основы машинного обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Основы глубокого обучения",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Введение в большие языковые модели (LLM)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Прикладной анализ временных рядов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Инженерные практики в ML и анализе данных",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Прикладные инструменты разработки",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Разработка веб-приложений (Python Backend)",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                },
+                {
+                  "name": "Проектирование микросервисов",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 3
+                }
+              ]
+            },
+            {
+              "name": "Пул выборных дисциплин. 4 семестр",
+              "semester": 4,
+              "total_credits": 9,
+              "total_hours": 324,
+              "courses": [
+                {
+                  "name": "Бизнес-анализ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Практики менторства и развития в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Управление проектами в Data Science",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Метрики и аналитика продукта",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Управление продуктовым портфелем",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Основы маркетинга для ИИ-продуктов",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Управление командами и проектами в ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Правовые аспекты разработки и использования ИИ",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                },
+                {
+                  "name": "Фандрайзинг и бизнес-планирование",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Блок 2. Практика",
+          "block_number": 2,
+          "total_credits": 42,
+          "total_hours": 1512,
+          "sub_blocks": [
+            {
+              "name": "Производственная, преддипломная практика",
+              "semester": 4,
+              "total_credits": 6,
+              "total_hours": 216,
+              "courses": [
+                {
+                  "name": "Производственная, преддипломная практика",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                }
+              ]
+            },
+            {
+              "name": "Производственная, технологическая (проектно-технологическая) практика",
+              "semester": 1,
+              "total_credits": 9,
+              "total_hours": 324,
+              "courses": [
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 1
+                }
+              ]
+            },
+            {
+              "name": "Производственная, технологическая (проектно-технологическая) практика",
+              "semester": 2,
+              "total_credits": 9,
+              "total_hours": 324,
+              "courses": [
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 2
+                }
+              ]
+            },
+            {
+              "name": "Производственная, технологическая (проектно-технологическая) практика",
+              "semester": 3,
+              "total_credits": 9,
+              "total_hours": 324,
+              "courses": [
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 3
+                }
+              ]
+            },
+            {
+              "name": "Производственная, технологическая (проектно-технологическая) практика",
+              "semester": 4,
+              "total_credits": 9,
+              "total_hours": 324,
+              "courses": [
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Блок 3. ГИА",
+          "block_number": 3,
+          "total_credits": 6,
+          "total_hours": 216,
+          "sub_blocks": [
+            {
+              "name": "Дисциплины",
+              "semester": null,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Государственная итоговая аттестация",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": null
+                },
+                {
+                  "name": "Подготовка к защите и защита ВКР",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Блок 4. Факультативные модули (дисциплины)",
+          "block_number": 4,
+          "total_credits": 0,
+          "total_hours": 0,
+          "sub_blocks": [
+            {
+              "name": "Дисциплины",
+              "semester": null,
+              "total_credits": 87,
+              "total_hours": 3132,
+              "courses": [
+                {
+                  "name": "Регуляция эмоционального состояния в профессиональной деятельности",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление мотивацией",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление мотивацией",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление мотивацией",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Инструменты принятия решений / Art & math of decision making",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Инструменты принятия решений / Art & math of decision making",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Инструменты принятия решений / Art & math of decision making",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Медиация и урегулирование разногласий / Mediation and dispute resolutio",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Медиация и урегулирование разногласий / Mediation and dispute resolutio",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Медиация и урегулирование разногласий / Mediation and dispute resolutio",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Развитие карьеры в современной профессиональной среде",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Развитие карьеры в современной профессиональной среде",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Развитие карьеры в современной профессиональной среде",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Выступления для молодых ученых",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Выступления для молодых ученых",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Выступления для молодых ученых",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Самопрезентация и питчинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Самопрезентация и питчинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Самопрезентация и питчинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Современное лидерство",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Современное лидерство",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Современное лидерство",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Межкультурная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Межкультурная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Межкультурная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Работа в удаленных командах",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Работа в удаленных командах",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Работа в удаленных командах",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Публичные выступления в онлайн-формате",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Публичные выступления в онлайн-формате",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Публичные выступления в онлайн-формате",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Техники ответов на вопросы в публичных выступлениях",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Техники ответов на вопросы в публичных выступлениях",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Техники ответов на вопросы в публичных выступлениях",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Публичные выступления в профессиональной деятельности / Pitches and speeches",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Публичные выступления в профессиональной деятельности / Pitches and speeches",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Публичные выступления в профессиональной деятельности / Pitches and speeches",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Доказательный подход к управлению карьерой / Evidence-based approach to career management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Доказательный подход к управлению карьерой / Evidence-based approach to career management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Доказательный подход к управлению карьерой / Evidence-based approach to career management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Планирование и изменение карьерной траектории / Launching and relaunching your career",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Планирование и изменение карьерной траектории / Launching and relaunching your career",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Планирование и изменение карьерной траектории / Launching and relaunching your career",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Основы публичных выступлений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы публичных выступлений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Основы публичных выступлений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Сторителлинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Сторителлинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Сторителлинг",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Стратегии эффективных переговоров с работодателем",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Стратегии эффективных переговоров с работодателем",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Стратегии эффективных переговоров с работодателем",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Управление стрессом / Stress management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление стрессом / Stress management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление стрессом / Stress management",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Практики совместной работы и принятия решений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Практики совместной работы и принятия решений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Практики совместной работы и принятия решений",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Сложная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Сложная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Сложная коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Основы финансовой грамотности",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы финансовой грамотности",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Основы финансовой грамотности",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Целеполагание в современном мире",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Целеполагание в современном мире",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Целеполагание в современном мире",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Управление стрессом и профилактика выгорания",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление стрессом и профилактика выгорания",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление стрессом и профилактика выгорания",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Тайм-менеджмент",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Тайм-менеджмент",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Тайм-менеджмент",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Управление конфликтами",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Управление конфликтами",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Управление конфликтами",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Современная бизнес-коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Современная бизнес-коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Современная бизнес-коммуникация",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Карьера в IT",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Карьера в IT",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Карьера в IT",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                },
+                {
+                  "name": "Эмпатичная коммуникация / Empathetic communication",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 1
+                },
+                {
+                  "name": "Эмпатичная коммуникация / Empathetic communication",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 2
+                },
+                {
+                  "name": "Эмпатичная коммуникация / Empathetic communication",
+                  "credits": 1,
+                  "hours": 36,
+                  "semester": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Универсальная (надпрофессиональная) подготовка",
+          "block_number": null,
+          "total_credits": 12,
+          "total_hours": 432,
+          "sub_blocks": [
+            {
+              "name": "Универсальные дисциплины",
+              "semester": null,
+              "total_credits": 12,
+              "total_hours": 432,
+              "courses": [
+                {
+                  "name": "Элективные микромодули Soft Skills",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Элективные микромодули Soft Skills",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Элективные микромодули Soft Skills",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Мировоззренческий модуль ии",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Креативные технологии",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Основы концептуального мышления / Introduction to Conceptual Thinking",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Основы концептуального мышления",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Предпринимательская культура",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": null
+                },
+                {
+                  "name": "Стартап-трек: от mvp до бизнеса",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Создание и развитие технологического бизнеса",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Этика в сфере информационных технологий и искусственного интеллекта",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Критическое мышление (продвинутый уровень)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Навыки критического мышления (продвинутый уровень) / Critical Thinking Skills (advanced)",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 3
+                },
+                {
+                  "name": "Иностранный язык (маг 2025/2026) ИИ",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": null
+                },
+                {
+                  "name": "Английский язык в профессиональной деятельности / English for specific purposes",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Русский язык как иностранный / Russian as a foreign language",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Английский язык A2 / English A2",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Английский язык A1 / English A1",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 2
+                },
+                {
+                  "name": "Английский язык в профессиональной деятельности / English for specific purposes",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Русский язык как иностранный / Russian as a foreign language",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Английский язык A2 / English A2",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Английский язык A1 / English A1",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                },
+                {
+                  "name": "Преддипломная практика",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": null
+                },
+                {
+                  "name": "Производственная, преддипломная практика",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Производственная практика",
+                  "credits": 36,
+                  "hours": 1296,
+                  "semester": null
+                },
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 1
+                },
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 2
+                },
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 3
+                },
+                {
+                  "name": "Производственная, технологическая (проектно-технологическая) практика",
+                  "credits": 9,
+                  "hours": 324,
+                  "semester": 4
+                },
+                {
+                  "name": "Государственная итоговая аттестация",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": null
+                },
+                {
+                  "name": "Подготовка к защите и защита ВКР",
+                  "credits": 6,
+                  "hours": 216,
+                  "semester": 4
+                },
+                {
+                  "name": "Регуляция эмоционального состояния в профессиональной деятельности",
+                  "credits": 3,
+                  "hours": 108,
+                  "semester": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "total_credits": 132,
+      "total_courses": 184
+    }
   }
 }
