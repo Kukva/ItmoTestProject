@@ -1,4 +1,5 @@
 venv
+.env
 test.py
 quick_test.py
 save_page.py
