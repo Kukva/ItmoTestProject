@@ -1,3 +1,5 @@
+# scripts/run_bot.py
+
 import asyncio
 import os
 import sys
