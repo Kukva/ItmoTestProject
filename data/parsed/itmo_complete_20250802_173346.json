@@ -1,0 +1,138 @@
+{
+  "ai": {
+    "program_id": "ai",
+    "url": "https://abit.itmo.ru/program/master/ai",
+    "parsed_at": "2025-08-02T17:33:41.447693",
+    "web_data": {
+      "program_title": "Искусственный интеллект",
+      "directions": [
+        {
+          "code": "09.04.01",
+          "name": "Информатика и вычислительная техника",
+          "budget_places": 51,
+          "target_places": 4,
+          "contract_places": 55
+        },
+        {
+          "code": "11.04.02",
+          "name": "Инфокоммуникационные технологии и системы связи",
+          "budget_places": 80,
+          "target_places": 5,
+          "contract_places": 25
+        },
+        {
+          "code": "27.04.05",
+          "name": "Инноватика",
+          "budget_places": 80,
+          "target_places": 5,
+          "contract_places": 40
+        }
+      ],
+      "basic_info": {
+        "форма обучения": "очная",
+        "длительность": "2 года",
+        "язык обучения": "русский",
+        "стоимость контрактного обучения (год)": "599 000 ₽",
+        "общежитие": "да",
+        "военный учебный центр": "да",
+        "гос. аккредитация": "да",
+        "дополнительные возможности": "Онлайн, Трек аспирантуры, ПИШ, Программа в сфере ИИ"
+      },
+      "manager_name": "Елизавета Витальевна Василенко",
+      "manager_contacts": [
+        "aitalents@itmo.ru",
+        "+7 (999) 526-79-88"
+      ],
+      "social_links": [
+        {
+          "text": "ВКонтакте",
+          "href": "https://vk.com/aitalenthub"
+        },
+        {
+          "text": "Сайт",
+          "href": "https://ai.itmo.ru/"
+        },
+        {
+          "text": "Telegram",
+          "href": "https://t.me/aitalenthubnews"
+        }
+      ],
+      "pdf_links": [
+        {
+          "text": "смотреть",
+          "href": "https://abit.itmo.ru/file_storage/file/exams/master/ai.pdf"
+        },
+        {
+          "text": "Политика по обработке персональных данных",
+          "href": "https://itmo.ru/file/pages/79/personal_data_policy.pdf"
+        },
+        {
+          "text": "Правила использования информации в доменной зоне itmo.ru",
+          "href": "https://itmo.ru/images/pages/79/Pravila_ispolzovanija_informacii.pdf"
+        }
+      ]
+    },
+    "curriculum_data": null
+  },
+  "ai_product": {
+    "program_id": "ai_product",
+    "url": "https://abit.itmo.ru/program/master/ai_product",
+    "parsed_at": "2025-08-02T17:33:43.729953",
+    "web_data": {
+      "program_title": "Управление ИИ-продуктами/AI Product",
+      "directions": [
+        {
+          "code": "02.04.03",
+          "name": "Математическое обеспечение и администрирование информационных систем",
+          "budget_places": 14,
+          "target_places": 0,
+          "contract_places": 50
+        }
+      ],
+      "basic_info": {
+        "форма обучения": "очная",
+        "длительность": "2 года",
+        "язык обучения": "русский",
+        "стоимость контрактного обучения (год)": "599 000 ₽",
+        "общежитие": "да",
+        "военный учебный центр": "да",
+        "гос. аккредитация": "да",
+        "дополнительные возможности": "СОП, Программа в сфере ИИ"
+      },
+      "manager_name": "Регина Ильдаровна Абдрашитова",
+      "manager_contacts": [
+        "aiproduct@itmo.ru",
+        "+7 (993) 639-86-77"
+      ],
+      "social_links": [
+        {
+          "text": "ВКонтакте",
+          "href": "https://vk.com/aitalenthub"
+        },
+        {
+          "text": "Сайт",
+          "href": "https://alfabank.ru/alfafuture/education/ma/itmo/"
+        },
+        {
+          "text": "Telegram",
+          "href": "https://t.me/ai_product_itmo"
+        }
+      ],
+      "pdf_links": [
+        {
+          "text": "смотреть",
+          "href": "https://abit.itmo.ru/file_storage/file/exams/master/ai_product.pdf"
+        },
+        {
+          "text": "Политика по обработке персональных данных",
+          "href": "https://itmo.ru/file/pages/79/personal_data_policy.pdf"
+        },
+        {
+          "text": "Правила использования информации в доменной зоне itmo.ru",
+          "href": "https://itmo.ru/images/pages/79/Pravila_ispolzovanija_informacii.pdf"
+        }
+      ]
+    },
+    "curriculum_data": null
+  }
+}
