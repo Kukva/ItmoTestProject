@@ -5,24 +5,15 @@ import json
 import logging
 from pathlib import Path
 from typing import Dict, Any, Optional
-from datetime import datetime
 
-from aiogram import Bot, Dispatcher, F
-from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, FSInputFile
-from aiogram.filters import CommandStart, Command
-from aiogram.fsm.context import FSMContext
-from aiogram.fsm.state import State, StatesGroup
+from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
+
+from .handlers import basic_router, profile_router, programs_router, text_router
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-# Состояния бота
-class BotStates(StatesGroup):
-    choosing_program = State()
-    asking_questions = State()
-    comparing_programs = State()
 
 class ITMOBot:
     """Telegram бот для консультаций по программам ИТМО"""
@@ -36,7 +27,6 @@ class ITMOBot:
     def _load_data(self) -> Dict[str, Any]:
         """Загрузка данных программ"""
         try:
-            # Путь к данным
             current_dir = Path(__file__).resolve()
             self.project_root = current_dir.parent.parent.parent
             data_file = self.project_root / "data" / "parsed" / "latest_complete.json"
@@ -52,371 +42,23 @@ class ITMOBot:
             return {}
     
     def _register_handlers(self):
-        """Регистрация обработчиков"""
-        # Команды
-        self.dp.message(CommandStart())(self.start_handler)
-        self.dp.message(Command("help"))(self.help_handler)
-        self.dp.message(Command("programs"))(self.programs_handler)
-        self.dp.message(Command("compare"))(self.compare_handler)
+        """Регистрация роутеров"""
+        # Подключаем экземпляр бота к каждому роутеру через middleware
+        self.dp.message.middleware.register(self._add_bot_instance)
+        self.dp.callback_query.middleware.register(self._add_bot_instance)
         
-        # Callback кнопки - ИСПРАВЛЕНО
-        self.dp.callback_query(F.data == "show_programs")(self.show_programs_handler)
-        self.dp.callback_query(F.data == "show_help")(self.show_help_handler)
-        self.dp.callback_query(F.data.startswith("program_"))(self.program_info_handler)
-        self.dp.callback_query(F.data.startswith("curriculum_"))(self.curriculum_handler)
-        self.dp.callback_query(F.data.startswith("contacts_"))(self.contacts_handler)
-        self.dp.callback_query(F.data.startswith("admission_"))(self.admission_handler)
-        self.dp.callback_query(F.data.startswith("download_pdf_"))(self.download_pdf_handler)  # НОВОЕ
-        self.dp.callback_query(F.data == "compare_programs")(self.compare_programs_handler)
-        self.dp.callback_query(F.data == "back_main")(self.back_to_main_handler)
-        
-        # Текстовые сообщения
-        self.dp.message(F.text)(self.text_handler)
+        # Регистрируем роутеры в правильном порядке
+        self.dp.include_router(basic_router)
+        self.dp.include_router(profile_router)
+        self.dp.include_router(programs_router)
+        self.dp.include_router(text_router)  # Последним, как fallback
     
-    async def start_handler(self, message: Message, state: FSMContext):
-        """Обработчик команды /start"""
-        await state.set_state(BotStates.choosing_program)
-        
-        keyboard = self._get_main_keyboard()
-        
-        welcome_text = (
-            "🎓 *Добро пожаловать в бот ИТМО!*\n\n"
-            "Я помогу вам узнать всё о магистерских программах по искусственному интеллекту:\n\n"
-            "• Информация о программах\n"
-            "• Условия поступления\n"
-            "• Учебные планы\n"
-            "• Сравнение программ\n\n"
-            "Выберите действие:"
-        )
-        
-        await message.answer(welcome_text, reply_markup=keyboard, parse_mode="Markdown")
+    async def _add_bot_instance(self, handler, event, data):
+        """Middleware для передачи экземпляра бота в обработчики"""
+        data['bot_instance'] = self
+        return await handler(event, data)
     
-    async def help_handler(self, message: Message):
-        """Обработчик команды /help"""
-        help_text = (
-            "🤖 *Команды бота:*\n\n"
-            "/start - Главное меню\n"
-            "/programs - Информация о программах\n"
-            "/compare - Сравнить программы\n"
-            "/help - Эта справка\n\n"
-            "💬 *Вы можете спросить:*\n"
-            "• Стоимость обучения\n"
-            "• Сроки поступления\n"
-            "• Учебные курсы\n"
-            "• Контакты менеджеров\n"
-            "• И многое другое!"
-        )
-        
-        await message.answer(help_text, parse_mode="Markdown")
-    
-    # НОВЫЕ ОБРАБОТЧИКИ CALLBACK'ОВ
-    async def show_programs_handler(self, callback: CallbackQuery):
-        """Обработчик кнопки 'Программы'"""
-        keyboard = self._get_programs_keyboard()
-        
-        text = (
-            "📚 *Выберите программу для подробной информации:*\n\n"
-            "🤖 **Искусственный интеллект** - фундаментальная подготовка в области ИИ\n\n"
-            "🎯 **ИИ в продуктах** - практическое применение ИИ в продуктах"
-        )
-        
-        await callback.message.edit_text(text, reply_markup=keyboard, parse_mode="Markdown")
-        await callback.answer()
-    
-    async def show_help_handler(self, callback: CallbackQuery):
-        """Обработчик кнопки 'Помощь'"""
-        help_text = (
-            "🤖 *Команды бота:*\n\n"
-            "/start - Главное меню\n"
-            "/programs - Информация о программах\n"
-            "/compare - Сравнить программы\n"
-            "/help - Эта справка\n\n"
-            "💬 *Вы можете спросить:*\n"
-            "• Стоимость обучения\n"
-            "• Сроки поступления\n"
-            "• Учебные курсы\n"
-            "• Контакты менеджеров\n"
-            "• И многое другое!"
-        )
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[[
-            InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")
-        ]])
-        
-        await callback.message.edit_text(help_text, reply_markup=keyboard, parse_mode="Markdown")
-        await callback.answer()
-    
-    async def programs_handler(self, message: Message):
-        """Обработчик команды /programs"""
-        keyboard = self._get_programs_keyboard()
-        
-        text = (
-            "📚 *Выберите программу для подробной информации:*\n\n"
-            "🤖 **Искусственный интеллект** - фундаментальная подготовка в области ИИ\n\n"
-            "🎯 **ИИ в продуктах** - практическое применение ИИ в продуктах"
-        )
-        
-        await message.answer(text, reply_markup=keyboard, parse_mode="Markdown")
-    
-    async def compare_handler(self, message: Message):
-        """Обработчик команды /compare"""
-        comparison = self._compare_programs()
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[[
-            InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")
-        ]])
-        
-        await message.answer(comparison, reply_markup=keyboard, parse_mode="Markdown")
-    
-    async def program_info_handler(self, callback: CallbackQuery):
-        """Обработчик выбора программы"""
-        # Правильно извлекаем program_id
-        callback_parts = callback.data.split("_")
-        if len(callback_parts) == 2:  # program_ai
-            program_id = callback_parts[1]
-        else:  # program_ai_product
-            program_id = "_".join(callback_parts[1:])  # ai_product
-        
-        logger.info(f"Выбрана программа: {program_id}")
-        
-        program_info = self._get_program_info(program_id)
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📋 Учебный план", callback_data=f"curriculum_{program_id}")],
-            [InlineKeyboardButton(text="📞 Контакты", callback_data=f"contacts_{program_id}")],
-            [InlineKeyboardButton(text="🎯 Поступление", callback_data=f"admission_{program_id}")],
-            [InlineKeyboardButton(text="🔄 Сравнить программы", callback_data="compare_programs")],
-            [InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")]
-        ])
-        
-        await callback.message.edit_text(program_info, reply_markup=keyboard, parse_mode="Markdown")
-        await callback.answer()
-    
-    # НОВЫЕ ДЕТАЛЬНЫЕ ОБРАБОТЧИКИ
-    async def curriculum_handler(self, callback: CallbackQuery):
-        """Обработчик учебного плана"""
-        # Правильно извлекаем program_id
-        callback_parts = callback.data.split("_")
-        if len(callback_parts) == 2:  # curriculum_ai
-            program_id = callback_parts[1]
-        else:  # curriculum_ai_product
-            program_id = "_".join(callback_parts[1:])  # ai_product
-        
-        logger.info(f"Запрошен учебный план для программы: {program_id}")
-        
-        await self._show_curriculum_menu(callback, program_id, edit_message=True)
-        await callback.answer()
-    
-    async def contacts_handler(self, callback: CallbackQuery):
-        """Обработчик контактов"""
-        # Правильно извлекаем program_id
-        callback_parts = callback.data.split("_")
-        if len(callback_parts) == 2:  # contacts_ai
-            program_id = callback_parts[1]
-        else:  # contacts_ai_product
-            program_id = "_".join(callback_parts[1:])  # ai_product
-        
-        logger.info(f"Запрошены контакты для программы: {program_id}")
-        
-        contacts_info = self._get_program_contacts(program_id)
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="⬅️ Назад к программе", callback_data=f"program_{program_id}")],
-            [InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")]
-        ])
-        
-        await callback.message.edit_text(contacts_info, reply_markup=keyboard, parse_mode="Markdown")
-        await callback.answer()
-    
-    async def admission_handler(self, callback: CallbackQuery):
-        """Обработчик информации о поступлении"""
-        # Правильно извлекаем program_id
-        callback_parts = callback.data.split("_")
-        if len(callback_parts) == 2:  # admission_ai
-            program_id = callback_parts[1]
-        else:  # admission_ai_product
-            program_id = "_".join(callback_parts[1:])  # ai_product
-        
-        logger.info(f"Запрошена информация о поступлении для программы: {program_id}")
-        
-        admission_info = self._get_admission_info_detailed(program_id)
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="⬅️ Назад к программе", callback_data=f"program_{program_id}")],
-            [InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")]
-        ])
-        
-        await callback.message.edit_text(admission_info, reply_markup=keyboard, parse_mode="Markdown")
-        await callback.answer()
-    
-    async def download_pdf_handler(self, callback: CallbackQuery):
-        """Обработчик скачивания PDF учебного плана"""
-        # Правильно извлекаем program_id
-        callback_parts = callback.data.split("_")
-        if len(callback_parts) == 3:  # download_pdf_ai
-            program_id = callback_parts[2]
-        else:  # download_pdf_ai_product
-            program_id = "_".join(callback_parts[2:])  # ai_product
-        
-        logger.info(f"Запрошено скачивание PDF для программы: {program_id}")
-        
-        # Показываем уведомление
-        await callback.answer("📄 Отправляю PDF файл...", show_alert=False)
-        
-        try:
-            # Ищем PDF файл
-            pdf_path = self._find_pdf_file(program_id)
-            
-            if not pdf_path or not pdf_path.exists():
-                await callback.message.answer("❌ PDF файл учебного плана не найден.")
-                return
-            
-            # Получаем название программы для описания
-            program = self.data.get(program_id, {})
-            web_data = program.get('web_data', {})
-            program_title = web_data.get('program_title', 'Программа')
-            
-            # Отправляем PDF как документ
-            pdf_file = FSInputFile(pdf_path)
-            caption = f"📚 Учебный план\n🎓 {program_title}\n📄 Файл: {pdf_path.name}"
-            
-            await callback.message.answer_document(
-                document=pdf_file,
-                caption=caption
-            )
-            
-            # Возвращаемся в меню учебного плана (переиспользуем существующий метод)
-            await self._show_curriculum_menu(callback, program_id, success_message="✅ PDF файл отправлен!")
-            
-        except Exception as e:
-            logger.error(f"Ошибка отправки PDF: {e}")
-            await callback.message.answer("❌ Произошла ошибка при отправке PDF файла.")
-    
-    async def _show_curriculum_menu(self, callback: CallbackQuery, program_id: str, success_message: str = "", edit_message: bool = False):
-        """Показать меню учебного плана (вынесено в отдельный метод)"""
-        curriculum_info = self._get_curriculum_info(program_id)
-        
-        # Проверяем наличие PDF файла
-        pdf_available = self._check_pdf_exists(program_id)
-        
-        # Добавляем предупреждение если PDF нет
-        if not pdf_available:
-            curriculum_info += "\n⚠️ _PDF файл учебного плана не найден_"
-        
-        # Добавляем сообщение об успехе если есть
-        if success_message:
-            curriculum_info += f"\n\n{success_message}"
-        
-        keyboard_buttons = []
-        if pdf_available:
-            keyboard_buttons.append([InlineKeyboardButton(text="📄 Скачать PDF", callback_data=f"download_pdf_{program_id}")])
-        
-        keyboard_buttons.extend([
-            [InlineKeyboardButton(text="⬅️ Назад к программе", callback_data=f"program_{program_id}")],
-            [InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")]
-        ])
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
-        
-        # Редактируем существующее сообщение или отправляем новое
-        if edit_message:
-            await callback.message.edit_text(
-                text=curriculum_info,
-                reply_markup=keyboard,
-                parse_mode="Markdown"
-            )
-        else:
-            await callback.message.answer(
-                text=curriculum_info,
-                reply_markup=keyboard,
-                parse_mode="Markdown"
-            )
-    
-    def _check_pdf_exists(self, program_id: str) -> bool:
-        """Проверка существования PDF файла"""
-        pdf_path = self._find_pdf_file(program_id)
-        return pdf_path is not None and pdf_path.exists()
-    
-    def _find_pdf_file(self, program_id: str) -> Optional[Path]:
-        """Поиск PDF файла для программы"""
-        # Папка с PDF файлами
-        pdfs_dir = self.project_root / "data" / "pdf"
-        
-        logger.info(f"Ищем PDF для программы {program_id} в папке: {pdfs_dir}")
-        
-        if not pdfs_dir.exists():
-            logger.warning(f"Папка PDF не найдена: {pdfs_dir}")
-            return None
-        
-        # Простое соответствие program_id -> имя файла
-        pdf_filename = f"{program_id}_curriculum.pdf"
-        pdf_path = pdfs_dir / pdf_filename
-        
-        logger.info(f"Ищем файл: {pdf_filename}")
-        
-        if pdf_path.exists():
-            logger.info(f"Найден PDF файл: {pdf_path}")
-            return pdf_path
-        else:
-            logger.warning(f"PDF файл не найден: {pdf_path}")
-            return None
-    
-    async def compare_programs_handler(self, callback: CallbackQuery):
-        """Обработчик сравнения программ"""
-        comparison = self._compare_programs()
-        
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[[
-            InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")
-        ]])
-        
-        await callback.message.edit_text(comparison, reply_markup=keyboard, parse_mode="Markdown")
-        await callback.answer()
-    
-    async def back_to_main_handler(self, callback: CallbackQuery, state: FSMContext):
-        """Возврат в главное меню"""
-        await state.set_state(BotStates.choosing_program)
-        
-        keyboard = self._get_main_keyboard()
-        
-        welcome_text = (
-            "🎓 *Главное меню*\n\n"
-            "Выберите действие или задайте вопрос:"
-        )
-        
-        await callback.message.edit_text(welcome_text, reply_markup=keyboard, parse_mode="Markdown")
-        await callback.answer()
-    
-    async def text_handler(self, message: Message, state: FSMContext):
-        """Обработчик текстовых сообщений"""
-        user_question = message.text.lower()
-        
-        # Простая система ответов на вопросы
-        answer = self._get_answer_for_question(user_question)
-        
-        if answer:
-            await message.answer(answer, parse_mode="Markdown")
-        else:
-            await message.answer(
-                "🤔 Извините, я не понял ваш вопрос.\n\n"
-                "Попробуйте использовать кнопки меню или задайте вопрос по-другому.\n\n"
-                "Например: 'стоимость обучения', 'когда поступать', 'контакты'"
-            )
-    
-    def _get_main_keyboard(self) -> InlineKeyboardMarkup:
-        """Главное меню"""
-        return InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="📚 Программы", callback_data="show_programs")],
-            [InlineKeyboardButton(text="🔄 Сравнить программы", callback_data="compare_programs")],
-            [InlineKeyboardButton(text="❓ Помощь", callback_data="show_help")]
-        ])
-    
-    def _get_programs_keyboard(self) -> InlineKeyboardMarkup:
-        """Клавиатура выбора программ"""
-        return InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="🤖 Искусственный интеллект", callback_data="program_ai")],
-            [InlineKeyboardButton(text="🎯 ИИ в продуктах", callback_data="program_ai_product")],
-            [InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")]
-        ])
-    
+    # Методы для работы с данными (используются в обработчиках)
     def _get_program_info(self, program_id: str) -> str:
         """Получение информации о программе"""
         if program_id not in self.data:
@@ -594,34 +236,62 @@ class ITMOBot:
         
         return comparison
     
-    def _get_answer_for_question(self, question: str) -> Optional[str]:
-        """Получение ответа на вопрос"""
-        # Ключевые слова и соответствующие ответы
-        keywords_map = {
-            'стоимость': self._get_cost_info,
-            'цена': self._get_cost_info,
-            'сколько стоит': self._get_cost_info,
-            'контакт': self._get_contacts_info,
-            'телефон': self._get_contacts_info,
-            'email': self._get_contacts_info,
-            'менеджер': self._get_contacts_info,
-            'поступление': self._get_admission_info,
-            'экзамен': self._get_admission_info,
-            'когда поступать': self._get_admission_info,
-            'курсы': self._get_courses_info,
-            'предметы': self._get_courses_info,
-            'учебный план': self._get_courses_info,
-            'длительность': self._get_duration_info,
-            'срок': self._get_duration_info,
-            'сколько лет': self._get_duration_info,
-        }
+    def _find_pdf_file(self, program_id: str) -> Optional[Path]:
+        """Поиск PDF файла для программы"""
+        pdfs_dir = self.project_root / "data" / "pdf"
         
-        for keyword, handler in keywords_map.items():
-            if keyword in question:
-                return handler()
+        if not pdfs_dir.exists():
+            logger.warning(f"Папка PDF не найдена: {pdfs_dir}")
+            return None
         
-        return None
+        pdf_filename = f"{program_id}_curriculum.pdf"
+        pdf_path = pdfs_dir / pdf_filename
+        
+        return pdf_path if pdf_path.exists() else None
     
+    async def _show_curriculum_menu(self, callback, program_id: str, success_message: str = "", edit_message: bool = False):
+        """Показать меню учебного плана"""
+        from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+        
+        curriculum_info = self._get_curriculum_info(program_id)
+        
+        # Проверяем наличие PDF файла
+        pdf_available = self._find_pdf_file(program_id) is not None
+        
+        # Добавляем предупреждение если PDF нет
+        if not pdf_available:
+            curriculum_info += "\n⚠️ _PDF файл учебного плана не найден_"
+        
+        # Добавляем сообщение об успехе если есть
+        if success_message:
+            curriculum_info += f"\n\n{success_message}"
+        
+        keyboard_buttons = []
+        if pdf_available:
+            keyboard_buttons.append([InlineKeyboardButton(text="📄 Скачать PDF", callback_data=f"download_pdf_{program_id}")])
+        
+        keyboard_buttons.extend([
+            [InlineKeyboardButton(text="⬅️ Назад к программе", callback_data=f"program_{program_id}")],
+            [InlineKeyboardButton(text="🏠 Главное меню", callback_data="back_main")]
+        ])
+        
+        keyboard = InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
+        
+        # Редактируем существующее сообщение или отправляем новое
+        if edit_message:
+            await callback.message.edit_text(
+                text=curriculum_info,
+                reply_markup=keyboard,
+                parse_mode="Markdown"
+            )
+        else:
+            await callback.message.answer(
+                text=curriculum_info,
+                reply_markup=keyboard,
+                parse_mode="Markdown"
+            )
+    
+    # Методы для ответов на вопросы (используются в text.py)
     def _get_cost_info(self) -> str:
         """Информация о стоимости"""
         info = "💰 *Стоимость обучения:*\n\n"
